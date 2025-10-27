@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Chat APP</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar: channels -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>Chat APP</h1>
+        <button id="addChannelBtn" title="Add channel">＋</button>
+      </div>
+      <ul id="channelList" class="channel-list"></ul>
+    </aside>
+
+    <!-- Main chat area -->
+    <main class="main">
+      <div class="chat-header">
+        <div id="channelTitle" class="channel-title">Channel #1</div>
+      </div>
+
+      <div id="messages" class="messages"></div>
+
+      <form id="sendForm" class="send-form">
+        <input id="nameInput" class="name-input" type="text" placeholder="Name" />
+        <input id="messageInput" class="message-input" type="text" placeholder="Message" autocomplete="off" />
+        <input id="fileInput" class="file-input" type="file" />
+        <button type="submit" class="send-btn">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
